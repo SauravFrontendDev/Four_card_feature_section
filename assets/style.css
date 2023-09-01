@@ -1,0 +1,140 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-blue);
+  font-size: 0.875rem;
+  padding: 5.313rem 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.header {
+  text-align: center;
+  max-width: 19.438rem;
+  margin: 0 auto 4.75rem;
+}
+.primary__heading {
+  font-size: 1.438rem;
+  line-height: normal;
+  letter-spacing: 0.167px;
+  margin-bottom: 0.875rem;
+  display: flex;
+  flex-direction: column;
+}
+.primary__heading--light {
+  font-weight: 200;
+}
+.primary__heading--bold {
+  font-weight: 600;
+}
+.primary__text {
+  line-height: 166.667%;
+  letter-spacing: 0.104px;
+  opacity: 0.5;
+}
+
+.cards__container {
+  max-width: 19.438rem;
+  margin: 0 auto;
+}
+.cards__container,
+.card__2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563rem;
+}
+
+.card {
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-top: 3.5px solid #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 13.875rem;
+}
+
+.card__subheading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.card__text {
+  font-size: 0.813rem;
+  line-height: 176.923%;
+  letter-spacing: 0.09px;
+  opacity: 0.5;
+}
+.card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.card__1 {
+  border-color: var(--cyan);
+}
+.card__2--A {
+  border-color: var(--red);
+}
+.card__2--B {
+  border-color: var(--orange);
+}
+.card__3 {
+  border-color: var(--blue);
+}
+
+@media (min-width: 75rem) {
+  .header {
+    max-width: 31.875rem;
+    margin: 0 auto 4rem;
+  }
+  .primary__heading {
+    font-size: 2rem;
+    letter-spacing: 0.25px;
+  }
+  .cards__container {
+    max-width: 69.375rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  .card__2 {
+    gap: 1.875rem;
+  }
+  .card {
+    padding: 2rem;
+    min-height: 15.625rem;
+  }
+  .card__1,
+  .card__2,
+  .card__3 {
+    flex-basis: calc((69.375rem - 2 * (1.875rem)) / 3);
+  }
+  .card__icon {
+    width: 4rem;
+    height: 4rem;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+}
