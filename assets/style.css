@@ -110,9 +110,11 @@ body {
     margin: 0 auto 4rem;
   }
   .primary__heading {
-    font-size: 2rem;
+    font-size: 2.25rem;
     letter-spacing: 0.25px;
+    margin-bottom: 1rem;
   }
+
   .cards__container {
     max-width: 69.375rem;
     flex-direction: row;
